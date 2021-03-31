@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style/customize.css">
     <title>Document</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
     
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
@@ -30,9 +30,10 @@
 
         <div class="d-flex">
             <li class="navbar-nav">
-                <a class="nav-link menu-text" aria-current="page" href="#">Home</a>
-                <a class="nav-link menu-text" href="#">Features</a>
-                <a class="nav-link menu-text" href="#">Pricing</a>
+                <a class="nav-link menu-text" aria-current="@" href="#">Home</a>
+                <a class="nav-link menu-text" href="#whatWeDo">Nothing</a>
+                <a class="nav-link menu-text" href="#games">Features</a>
+                <a class="nav-link menu-text" href="#platform">Pricing</a>
                 <a class="nav-link menu-text" href="#">Pricing</a>
               </li>
         </div>
@@ -59,7 +60,7 @@
 
 
 <!-- what we do -->
-<section class="my-5 py-5">
+<section class="my-5 py-5" id="whatWeDo">
     <div class="container">
         <div class="row text-center">
         <div class="col-sm-12">
@@ -86,7 +87,7 @@
 <!-- what we do -->
 
 <!-- games -->
-<section>
+<section class="my-5 py-5" id="games">
     <div class="container">
       <div class="col-sm-12 text-center">
         <h1 class="title-text white-text-color">Games</h1>
@@ -136,24 +137,34 @@
 <!-- games -->
 
 <!-- platform -->
-<section class="platform-section">
+<section class="platform-section my-5 py-5" id="platform">
   <div class="container">
-    <div class="col-sm-12 text-center">
-      <h1 class="title-text white-text-color45">GearPlay Platform</h1>
+    <div class="col-sm-12 text-center mb-5 pb-5">
+      <h1 class="title-text white-text-color">GearPlay Platform</h1>
     </div>
 
-    <div class="row">
-      <div class="col-sm-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae optio omnis sunt cumque laudantium autem officiis nihil, excepturi alias ut? Incidunt dolorem facilis distinctio earum beatae velit minus, dolor laborum?</div>
-      <div class="col-sm-6" style="background-color: rgba(255, 255, 255, 0.05); border-radius: 10px;">
-        <img src="images/pc.svg" class="w-100" alt="">
+    <!-- <div class="row"> -->
+      <div class="row mb-5 pb-5">
+        <div class="col-sm-5 my-auto">
+          <h3 class="subTitle-Text orange-text-color">Sub Title</h3>
+          <p class="paragraph-text white-text-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae optio omnis sunt cumque laudantium autem officiis nihil, excepturi alias ut? Incidunt dolorem facilis distinctio earum beatae velit minus, dolor laborum?</p>
+        </div>
+        <div class="col-sm-6 offset-sm-1" style="background-color: rgba(255, 255, 255, 0.05); border-radius: 10px;">
+          <img src="images/pc.svg" class="w-100" alt="">
+        </div>
       </div>
 
-      <div class="col-sm-6" style="background-color: rgba(255, 255, 255, 0.05); border-radius: 10px;">
-        <img src="images/mobile.svg" class="w-100" alt="">
+      <div class="row mt-5 pt-3">
+        <div class="col-sm-6" style="background-color: rgba(255, 255, 255, 0.05); border-radius: 10px;">
+          <img src="images/mobile.svg" class="w-100" alt="">
+        </div>
+        <div class="col-sm-5 my-auto  offset-sm-1">
+          <h3 class="subTitle-Text orange-text-color">Sub Title</h3>
+          <p class="paragraph-text white-text-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae optio omnis sunt cumque laudantium autem officiis nihil, excepturi alias ut? Incidunt dolorem facilis distinctio earum beatae velit minus, dolor laborum?</p>
+        </div>
       </div>
-      <div class="col-sm-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae optio omnis sunt cumque laudantium autem officiis nihil, excepturi alias ut? Incidunt dolorem facilis distinctio earum beatae velit minus, dolor laborum?</div>
-    </div>
   </div>
+</section>  
 <!-- platform -->
 
 
