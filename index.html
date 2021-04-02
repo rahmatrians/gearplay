@@ -28,7 +28,7 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
     <div class="container-fluid">
-      <a class="navbar-brand title-text" href="#"><p id="asyncExec"></p></a>
+      <a class="navbar-brand title-text" href="#">GearPlay</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,7 +56,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 my-5 py-5">
-          <h3 class="title-text white-text-color" style="font-size: 40px;">Meet Your New Challengers!</h3>
+          <h3 class="title-text white-text-color" id="asyncExec" style="font-size: 40px;"></h3>
           <p class="paragraph-text white-text-color mt-3">If you’re part of the gaming, Whether you’re good playing or just doing play normal <br> want to challenge to the final, GearPlay makes easy to enter tournament with other challengers</p>
           <button type="button" class="btn btn-primary p-3" style="background-color: #7856FF; border-bottom: 6px solid #462F9F; height: 60px;"><p class="title-text">Let's In!</p></button>
         </div>
@@ -106,9 +106,9 @@
     <div id="splide" class="splide m-auto">
       <div class="splide__track">
         <ul class="splide__list">
-          <li class="splide__slide mx-3" style="width: 100px;"><div><img src="test.jpg" class="d-block w-100" alt=""></div></li>
-          <li class="splide__slide mx-3" style="width: 300px;"><div><img src="test.jpg" class="d-block w-100" alt=""></div></li>
-          <li class="splide__slide mx-3" style="width: 100px;"><div><img src="test.jpg" class="d-block w-100" alt=""></div></li>
+          <li class="splide__slide mx-3" style="width: 100px;"><div><img src="images/cyberpunk.jpg" class="d-block w-100" alt=""></div></li>
+          <li class="splide__slide mx-3" style="width: 300px;"><div><img src="images/pubg.jpg" class="d-block w-100" alt=""></div></li>
+          <li class="splide__slide mx-3" style="width: 100px;"><div><img src="images/valorant1.jpg" class="d-block w-100" alt=""></div></li>
         </ul>
       </div>
     </div>
@@ -242,7 +242,7 @@
   new TypeIt("#asyncExec", {
     waitUntilVisible: true
   })
-    .type("Hold up!")
+    .type("Meet Your New ")
     .exec(async () => {
       //-- Return a promise that resolves after something happens.
       await new Promise((resolve, reject) => {
@@ -251,7 +251,7 @@
         }, 2000);
       });
     })
-    .type(" OK, now go.")
+    .type("Challengers!")
     .go();
   </script>
 
